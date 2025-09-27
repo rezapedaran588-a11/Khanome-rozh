@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خانم رژه - گالری آرایشی</title>
+    <style>
+        /* ===== رنگ‌ها ===== */
+        :root {
+            --pink: #f4c2c2;
+            --cream: #fff0e5;
+            --white: #ffffff;
+            --text-color: #333;
+        }
+
+        /* ===== بدنه ===== */
+        body {
+            margin: 0;
+            font-family: 'Tahoma', sans-serif;
+            background-color: var(--cream);
+            color: var(--text-color);
+        }
+
+        /* ===== هدر ===== */
+        header {
+            background-color: var(--pink);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-family: 'Cursive', sans-serif;
+            font-size: 2.5rem;
+            color: var(--white);
+            margin: 0;
+        }
+
+        /* ===== معرفی ===== */
+        .intro {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* ===== گالری ===== */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ===== فوتر ===== */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--pink);
+            color: var(--white);
+            margin-top: 30px;
+        }
+
+        /* ===== واکنش‌گرا ===== */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .intro p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>خانم رژه</h1>
+    </header>
+
+    <section class="intro">
+        <p>به گالری آرایشی خانم رژه خوش آمدید! بهترین و شیک‌ترین لوازم آرایشی را اینجا پیدا کنید و از زیبایی خود لذت ببرید.</p>
+    </section>
+
+    <section class="gallery">
+        <img src="https://via.placeholder.com/300x300?text=محصول+1" alt="محصول 1">
+        <img src="https://via.placeholder.com/300x300?text=محصول+2" alt="محصول 2">
+        <img src="https://via.placeholder.com/300x300?text=محصول+3" alt="محصول 3">
+        <img src="https://via.placeholder.com/300x300?text=محصول+4" alt="محصول 4">
+        <img src="https://via.placeholder.com/300x300?text=محصول+5" alt="محصول 5">
+        <img src="https://via.placeholder.com/300x300?text=محصول+6" alt="محصول 6">
+    </section>
+
+    <footer>
+        &copy; 2025 خانم رژه
+    </footer>
+
+</body>
+</html>
