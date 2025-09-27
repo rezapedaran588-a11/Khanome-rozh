@@ -1,112 +1,131 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خانم رژه - گالری آرایشی</title>
-    <style>
-        /* ===== رنگ‌ها ===== */
-        :root {
-            --pink: #f4c2c2;
-            --cream: #fff0e5;
-            --white: #ffffff;
-            --text-color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خانم رژ - گالری آرایشی</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
-        /* ===== بدنه ===== */
-        body {
-            margin: 0;
-            font-family: 'Tahoma', sans-serif;
-            background-color: var(--cream);
-            color: var(--text-color);
-        }
+    :root {
+      --red: #c21807;
+      --dark: #111;
+      --white: #fff;
+    }
 
-        /* ===== هدر ===== */
-        header {
-            background-color: var(--pink);
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-family: 'Cursive', sans-serif;
-            font-size: 2.5rem;
-            color: var(--white);
-            margin: 0;
-        }
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
 
-        /* ===== معرفی ===== */
-        .intro {
-            text-align: center;
-            padding: 30px 20px;
-        }
-        .intro p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: auto;
-            line-height: 1.6;
-        }
+    /* هدر */
+    header {
+      background: linear-gradient(90deg, var(--red), #ff4d4d);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
 
-        /* ===== گالری ===== */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
+    /* معرفی */
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .intro h2 {
+      color: var(--red);
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
 
-        /* ===== فوتر ===== */
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: var(--pink);
-            color: var(--white);
-            margin-top: 30px;
-        }
+    /* گالری */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
 
-        /* ===== واکنش‌گرا ===== */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .intro p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    /* آدرس */
+    .address {
+      background: #f9f9f9;
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 3px solid var(--red);
+    }
+    .address h3 {
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+
+    /* فوتر */
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>خانم رژه</h1>
-    </header>
+  <header>
+    <h1>خانم رژ</h1>
+    <p>گالری تخصصی لوازم آرایشی شیک و اورجینال</p>
+  </header>
 
-    <section class="intro">
-        <p>به گالری آرایشی خانم رژه خوش آمدید! بهترین و شیک‌ترین لوازم آرایشی را اینجا پیدا کنید و از زیبایی خود لذت ببرید.</p>
-    </section>
+  <section class="intro">
+    <h2>به دنیای زیبایی خوش آمدید 💄</h2>
+    <p>
+      در گالری خانم رژ، مجموعه‌ای از بهترین و لوکس‌ترین لوازم آرایشی را خواهید یافت.  
+      زیبایی شما ارزشمند است و ما اینجا هستیم تا انتخابی خاص و متفاوت برایتان رقم بزنیم.
+    </p>
+  </section>
 
-    <section class="gallery">
-        <img src="https://via.placeholder.com/300x300?text=محصول+1" alt="محصول 1">
-        <img src="https://via.placeholder.com/300x300?text=محصول+2" alt="محصول 2">
-        <img src="https://via.placeholder.com/300x300?text=محصول+3" alt="محصول 3">
-        <img src="https://via.placeholder.com/300x300?text=محصول+4" alt="محصول 4">
-        <img src="https://via.placeholder.com/300x300?text=محصول+5" alt="محصول 5">
-        <img src="https://via.placeholder.com/300x300?text=محصول+6" alt="محصول 6">
-    </section>
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600" alt="رژ لب">
+    <img src="https://images.unsplash.com/photo-1612817159949-195b3d3c90a9?w=600" alt="ست براش آرایشی">
+    <img src="https://images.unsplash.com/photo-1610970878453-df2a99f1e1e9?w=600" alt="پالت سایه چشم">
+    <img src="https://images.unsplash.com/photo-1620317264564-02aa8e5a7af4?w=600" alt="لاک ناخن">
+    <img src="https://images.unsplash.com/photo-1605478032783-3ad39fcf0cf1?w=600" alt="ریمل و خط چشم">
+    <img src="https://images.unsplash.com/photo-1596464716121-2f3c8e98a152?w=600" alt="عطر و ادکلن زنانه">
+  </section>
 
-    <footer>
-        &copy; 2025 خانم رژه
-    </footer>
+  <section class="address">
+    <h3>📍 آدرس فروشگاه</h3>
+    <p>اصفهان، خیابان ۲۲ بهمن، نبش چهارراه حمزه، گالری خانم رژ</p>
+  </section>
+
+  <footer>
+    &copy; 2025 همه حقوق محفوظ است | گالری خانم رژ
+  </footer>
 
 </body>
 </html>
