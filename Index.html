@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>گالری خانم رژ</title>
+<title>گالری آرایشی خانم رژ</title>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -13,46 +13,55 @@
   --text:#eee;
   --card:#111;
   --muted:#bbb;
+  --hover-shadow:0 15px 35px rgba(255,0,0,0.6);
 }
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Vazirmatn',sans-serif;}
 body{background:var(--black);color:var(--text);}
+a{color:var(--red-light);text-decoration:none;}
 header{background:linear-gradient(90deg,var(--red-dark),var(--red-light));color:#fff;text-align:center;padding:30px;box-shadow:0 5px 15px rgba(0,0,0,0.7);}
 header h1{font-size:3rem;}
 header p{margin-top:8px;font-size:1.2rem;}
 nav{margin-top:10px;}
-nav a{color:#fff;text-decoration:none;margin:0 10px;font-weight:700;}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:700;}
+nav a:hover{text-decoration:underline;}
 .container{max-width:1200px;margin:auto;padding:20px;}
 .intro{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-bottom:40px;}
 .intro div{flex:1;min-width:280px;}
-.intro img{flex:1;max-width:450px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.7);}
+.intro img{flex:1;max-width:500px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.7);transition:transform 0.3s;}
+.intro img:hover{transform:scale(1.05);}
 .categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-bottom:40px;}
-.cat{background:var(--card);border-radius:12px;overflow:hidden;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.5);}
+.cat{background:var(--card);border-radius:12px;overflow:hidden;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.5);transition:transform 0.3s, box-shadow 0.3s;}
+.cat:hover{transform:translateY(-5px);box-shadow:var(--hover-shadow);}
 .cat img{width:100%;height:200px;object-fit:cover;}
 .cat h3{margin:10px 0;}
 .cat p{margin-bottom:10px;color:var(--muted);}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:40px;}
-.card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.7);display:flex;flex-direction:column;transition:transform 0.3s;}
-.card:hover{transform:scale(1.05);}
+.card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.7);display:flex;flex-direction:column;transition:transform 0.3s, box-shadow 0.3s;}
+.card:hover{transform:scale(1.05);box-shadow:var(--hover-shadow);}
 .card img{width:100%;height:280px;object-fit:cover;transition:transform 0.3s;}
+.card img:hover{transform:scale(1.05);}
 .card-body{padding:12px;flex:1;display:flex;flex-direction:column;}
 .card-body h4{margin:0 0 6px;}
 .card-body p{margin:0 0 10px;color:var(--muted);}
 .price-row{margin-top:auto;display:flex;justify-content:space-between;align-items:center;}
 .price{font-weight:800;color:var(--red-light);}
-.buy{background:var(--red-light);color:#fff;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:700;cursor:pointer;transition:background 0.3s;}
-.buy:hover{background:var(--red-dark);}
+.buy{background:var(--red-light);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;cursor:pointer;transition:background 0.3s, transform 0.2s;}
+.buy:hover{background:var(--red-dark);transform:scale(1.05);}
 .info{background:var(--card);border-radius:10px;padding:20px;display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between;margin-top:40px;}
 .info div{flex:1;min-width:250px;}
 .info a{color:var(--red-light);text-decoration:none;font-weight:700;}
 footer{text-align:center;color:var(--muted);padding:20px;margin-top:20px;}
-@media(max-width:900px){.intro{flex-direction:column;align-items:center;}.intro img{margin-top:20px;}}
+@media(max-width:900px){
+  .intro{flex-direction:column;align-items:center;}
+  .intro img{margin-top:20px;}
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>خانم رژ</h1>
-  <p>گالری آرایشی لوکس — «راز جذابیت تو از اینجا شروع می‌شود»</p>
+  <h1>گالری آرایشی خانم رژ</h1>
+  <p>«راز جذابیت تو از اینجا شروع می‌شود»</p>
   <nav>
     <a href="#categories">دسته‌بندی</a>
     <a href="#products">محصولات</a>
@@ -64,8 +73,8 @@ footer{text-align:center;color:var(--muted);padding:20px;margin-top:20px;}
 
 <section class="intro">
   <div>
-    <h2>ادکلن، لوازم آرایشی و محصولات پوستی منتخب</h2>
-    <p>محصولات اورجینال، قیمت‌های به‌روز، ارسال سریع</p>
+    <h2>زیبایی و جذابیت با محصولات منتخب</h2>
+    <p>لوازم آرایشی شیک و مدرن، ادکلن‌های به‌روز و محصولات پوستی اورجینال</p>
   </div>
   <div>
     <img src="https://images.pexels.com/photos/1666079/pexels-photo-1666079.jpeg?auto=compress&cs=tinysrgb&w=900" alt="خانم رژ">
@@ -76,172 +85,30 @@ footer{text-align:center;color:var(--muted);padding:20px;margin-top:20px;}
   <div class="cat">
     <img src="https://images.pexels.com/photos/51383/pexels-photo-51383.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ادکلن">
     <h3>ادکلن‌های روز</h3>
-    <p>بای لندو، مارتینی — رایحه‌های متنوع</p>
+    <p>بای لندو و مارتینی — رایحه‌های متنوع</p>
   </div>
   <div class="cat">
     <img src="https://images.pexels.com/photos/3952245/pexels-photo-3952245.jpeg?auto=compress&cs=tinysrgb&w=900" alt="آرایشی">
     <h3>لوازم آرایشی خفن</h3>
-    <p>گابرینی، نستور — برای میکاپ حرفه‌ای</p>
+    <p>گابرینی و نستور — برای میکاپ حرفه‌ای</p>
   </div>
   <div class="cat">
     <img src="https://images.pexels.com/photos/4052593/pexels-photo-4052593.jpeg?auto=compress&cs=tinysrgb&w=900" alt="پوستی">
     <h3>محصولات پوستی</h3>
     <p>کلینیک، کوزارکس، سام‌بای، بیواکوا</p>
   </div>
-  <div class="cat">
-    <img src="https://images.pexels.com/photos/373752/pexels-photo-373752.jpeg?auto=compress&cs=tinysrgb&w=900" alt="اسپری ضدتعریق">
-    <h3>اسپری ضدتعریق</h3>
-    <p>داو و رکسونا — رایحه‌های متنوع</p>
-  </div>
 </section>
 
 <section id="products" class="grid">
-  <!-- کارت‌های محصولات متعدد (ادکلن، آرایشی، پوستی، اسپری) -->
-  <div class="card">
-    <img src="https://images.pexels.com/photos/51383/pexels-photo-51383.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ادکلن بای لندو">
-    <div class="card-body">
-      <h4>ادکلن بای لندو — کلاسیک</h4>
-      <p>رایحه ماندگار و محبوب</p>
-      <div class="price-row">
-        <div class="price">۷۰۰,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('ادکلن بای لندو')">خرید</button>
-      </div>
+<!-- کارت‌های محصولات ابتدایی -->
+<div class="card">
+  <img src="https://images.pexels.com/photos/51383/pexels-photo-51383.jpeg?auto=compress&cs=tinysrgb&w=900" alt="ادکلن بای لندو">
+  <div class="card-body">
+    <h4>ادکلن بای لندو — کلاسیک</h4>
+    <p>رایحه ماندگار و محبوب</p>
+    <div class="price-row">
+      <div class="price">۷۰۰,۰۰۰ تومان</div>
+      <button class="buy" onclick="buyProduct('ادکلن بای لندو')">خرید</button>
     </div>
   </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/36788/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=900" alt="ادکلن مارتینی">
-    <div class="card-body">
-      <h4>ادکلن مارتینی — چند رایحه</h4>
-      <p>مناسب هدیه و استایل شب</p>
-      <div class="price-row">
-        <div class="price">۸۰۰,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('ادکلن مارتینی')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- کارت‌های دیگر: رژ لب، پالت سایه، سرم‌ها، اسپری‌ها... -->
-  <div class="card">
-    <img src="https://images.pexels.com/photos/3952252/pexels-photo-3952252.jpeg?auto=compress&cs=tinysrgb&w=900" alt="رژ لب گابرینی">
-    <div class="card-body">
-      <h4>رژ لب گابرینی — مات</h4>
-      <p>رنگ ترند و ماندگاری طولانی</p>
-      <div class="price-row">
-        <div class="price">۱۴۵
-        <div class="price">۱۴۵,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('رژ لب گابرینی مات')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/4503263/pexels-photo-4503263.jpeg?auto=compress&cs=tinysrgb&w=900" alt="پالت سایه نستور">
-    <div class="card-body">
-      <h4>پالت سایه نستور — حرفه‌ای</h4>
-      <p>شامل ۱۲ رنگ متنوع برای میکاپ روز و شب</p>
-      <div class="price-row">
-        <div class="price">۲۸۰,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('پالت سایه نستور حرفه‌ای')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/386148/pexels-photo-386148.jpeg?auto=compress&cs=tinysrgb&w=900" alt="کرم آبرسان کلینیک">
-    <div class="card-body">
-      <h4>کرم آبرسان کلینیک</h4>
-      <p>محصول اورجینال برای آبرسانی پوست، مناسب انواع پوست‌ها</p>
-      <div class="price-row">
-        <div class="price">۱,۴۰۰,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('کرم آبرسان کلینیک')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/4052593/pexels-photo-4052593.jpeg?auto=compress&cs=tinysrgb&w=900" alt="سرم کوزارکس">
-    <div class="card-body">
-      <h4>سرم روشن‌کننده کوزارکس</h4>
-      <p>شفاف‌کننده پوست با ترکیبات طبیعی</p>
-      <div class="price-row">
-        <div class="price">۱,۳۰۰,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('سرم روشن‌کننده کوزارکس')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/373752/pexels-photo-373752.jpeg?auto=compress&cs=tinysrgb&w=900" alt="سرم بیواکوا">
-    <div class="card-body">
-      <h4>سرم بیواکوا</h4>
-      <p>مناسب پوست حساس و روزانه</p>
-      <div class="price-row">
-        <div class="price">۱۸۰,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('سرم بیواکوا')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/373900/pexels-photo-373900.jpeg?auto=compress&cs=tinysrgb&w=900" alt="اسپری داو">
-    <div class="card-body">
-      <h4>اسپری ضدتعریق داو</h4>
-      <p>رایحه ملایم و محافظت طولانی</p>
-      <div class="price-row">
-        <div class="price">۷۵,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('اسپری داو')">خرید</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://images.pexels.com/photos/50710/pexels-photo-50710.jpeg?auto=compress&cs=tinysrgb&w=900" alt="اسپری رکسونا">
-    <div class="card-body">
-      <h4>اسپری رکسونا</h4>
-      <p>محافظت طولانی و رایحه متنوع</p>
-      <div class="price-row">
-        <div class="price">۷۵,۰۰۰ تومان</div>
-        <button class="buy" onclick="buyProduct('اسپری رکسونا')">خرید</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- بخش تماس -->
-<section id="contact" class="info">
-  <div>
-    <h3>📍 آدرس</h3>
-    <p>اصفهان، خیابان ۲۲ بهمن، نبش چهارراه حمزه</p>
-    <p>گالری خانم رژ</p>
-  </div>
-  <div>
-    <h3>📞 تماس</h3>
-    <p>09301180030</p>
-    <p>09308558602</p>
-  </div>
-  <div>
-    <h3>🌐 شبکه‌های اجتماعی</h3>
-    <p><a href="#">اینستاگرام</a> | <a href="#">تلگرام</a></p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 گالری خانم رژ — تمام حقوق محفوظ است.</p>
-  <p>
-    <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=653342&Code=qUSRYPxxQITS7erzOSFbezDFwwPx9k0D">
-      <img referrerpolicy="origin" src="https://trustseal.enamad.ir/logo.aspx?id=653342&Code=qUSRYPxxQITS7erzOSFbezDFwwPx9k0D" 
-      alt="نماد اعتماد الکترونیکی" style="cursor:pointer; margin-top:10px;" code="qUSRYPxxQITS7erzOSFbezDFwwPx9k0D">
-    </a>
-  </p>
-</footer>
-
-<script>
-function buyProduct(productName){
-  alert('محصول "'+productName+'" به سبد خرید اضافه شد!\\n(درگاه و پیامک شبیه‌سازی شده)');
-  // درگاه واقعی زیبال یا زرین‌پال و webhook پیامک می‌تواند اینجا اضافه شود
-}
-</script>
-<a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=653342&Code=qUSRYPxxQITS7erzOSFbezDFwwPx9k0D'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=653342&Code=qUSRYPxxQITS7erzOSFbezDFwwPx9k0D' alt='' style='cursor:pointer' code='qUSRYPxxQITS7erzOSFbezDFwwPx9k0D'></a>
-</body>
-</html>
+</div>
